@@ -257,7 +257,7 @@ th {
   text-align: left; }
 
 html {
-  background-color: #F5F5F5;
+  background-color: #fafafa;
   font-size: 16px;
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
@@ -1699,12 +1699,13 @@ a.box:active {
       border-color: transparent transparent #fff #fff !important; }
     .button.is-danger.is-outlined {
       background-color: transparent;
-      border-color: #ff3860;
-      color: #ff3860; }
+      border-color: #b30028;
+      color: #b30028; }
       .button.is-danger.is-outlined:hover, .button.is-danger.is-outlined:focus {
-        background-color: #ff3860;
-        border-color: #ff3860;
-        color: #fff; }
+        background-color: #b30028;
+        border-color: #b30028;
+        color: #fff; 
+	transition: 0.5s;}
       .button.is-danger.is-outlined.is-loading::after {
         border-color: transparent transparent #ff3860 #ff3860 !important; }
       .button.is-danger.is-outlined[disabled], fieldset[disabled] .button.is-danger.is-outlined {
@@ -5551,13 +5552,14 @@ label.panel-block {
 
 .hero-foot {
   flex-grow: 0;
+  padding: 1.5rem 1.5rem 1.5rem 1.5rem;
+  background-color: #fafafa; 
   flex-shrink: 0; }
 
 .hero-body {
   flex-grow: 1;
   flex-shrink: 0;
-  padding: 1.5rem 1.5rem;
-  background-color: #fafafa; }
+  padding: 2.5rem 2rem 3rem 3rem;}
 
 .section {
   padding: 3rem 1.5rem; }
