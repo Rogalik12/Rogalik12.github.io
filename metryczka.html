@@ -8,6 +8,7 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<link rel="stylesheet" href="styles/mystyles.css">
 		<script defer src="https://use.fontawesome.com/releases/v5.0.7/js/all.js"></script>
+		<script src="plec.js"></script>
 		<!-- <link rel="stylesheet" href="styles/debug.css"> -->
 	</head>
 
@@ -22,7 +23,7 @@
             </nav> -->
 
 			<nav class="hero-body">
-				<div class="columns is-vcentered is-desktop">
+				<div class="columns is-vcentered">
 
 					
 					<div class="column">
@@ -37,9 +38,9 @@
 							<p class="heading"><img src="imgs/logo3.png" alt="" style="max-height: 130px"></p>
 							<h1 class="title">METRYCZKA</h1>
 							<h1 class="subtitle">Na początek kilka informacji o Tobie</h1>
-							<h1>Jeśli tak, przygotowaliśmy dla Ciebie zestaw kilku pytań, które pomogą Ci w odnalezieniu swojej drogi życiowej.
-								Przygotuj sobie 10 minut na rozwiązanie testu, odpowiadaj na pytania szczerze i zgodnie z prawdą, a my na podstawie
-								Twoich odpowiedzi powiemy Ci, w jakie zawody są Ci pisane!</h1>
+							<div class="containter has-text-centered">
+								<p class="heading"><img src="imgs/killme.png" alt="" ></p>
+							</div>
 
 								<!-- Podkolumny -->
 
@@ -161,18 +162,18 @@
 													</p>
 												</div>
 												<div class="field has-addons">
-														<p class="control">
-															<a class="button is-danger">
+														<p class="control" id="k">
+															<a class="button is-danger" onclick="k()">
 																K
 															</a>
 														</p>
-														<p class="control">
-															<a class="button is-success">
+														<p class="control" id="un">
+															<a class="button is-success" onclick="un()">
 																?
 															</a>
 														</p>
-														<p class="control">
-															<a class="button is-info">
+														<p class="control" id="m">
+															<a class="button is-info" onclick="m()">
 																M
 															</a>
 														</p>
@@ -204,7 +205,7 @@
 									</div>
 								</div>
 								<div class="field">
-								<input type="submit" class="button is-danger is-medium is-outlined" value="Rozpocznij test!">
+								<input type="submit" class="button is-danger is-medium is-outlined" onclick="javascript:location.href='pytania1.html'" value="Rozpocznij test!">
 								</div>
 						</div>
 					</div>
