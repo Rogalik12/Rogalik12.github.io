@@ -355,10 +355,13 @@ pre {
     font-size: 1em;
     padding: 0; }
 
-table td,
+table td
+{
+  text-align: left;
+  vertical-align: center; }
 table th {
   text-align: left;
-  vertical-align: top; }
+  vertical-align: center; }
 table th {
   color: #363636; }
 
@@ -1927,7 +1930,12 @@ a.box:active {
   font-size: 75%; }
 .content table {
   width: 100%; }
-  .content table td,
+  .content table td{
+    border: 1px solid #dbdbdb;
+    border-width: 0 0 1px;
+    padding: 0.5em 0.75em;
+    align-content: middle;
+    align-items: middle; }
   .content table th {
     border: 1px solid #dbdbdb;
     border-width: 0 0 1px;
@@ -2931,7 +2939,6 @@ a.box:active {
   -webkit-appearance: none;
   border: none;
   border-radius: 290486px;
-  display: block;
   height: 1rem;
   overflow: hidden;
   padding: 0;
@@ -3054,12 +3061,16 @@ a.box:active {
 .table {
   background-color: white;
   color: #363636; }
-  .table td,
+  .table td{
+    border: 1px solid #dbdbdb;
+    border-width: 0 0 1px;
+    padding: 0.5em 0.75em;
+    vertical-align: middle; }
   .table th {
     border: 1px solid #dbdbdb;
     border-width: 0 0 1px;
     padding: 0.5em 0.75em;
-    vertical-align: top; }
+    vertical-align: middle; }
     .table td.is-white,
     .table th.is-white {
       background-color: white;
@@ -3172,6 +3183,11 @@ a.box:active {
     padding: 0.25em 0.5em; }
   .table.is-striped tbody tr:not(.is-selected):nth-child(even) {
     background-color: #fafafa; }
+
+    .td.is-center {
+      align-items: center;
+      display: flex;
+    }
 
 .table-container {
   -webkit-overflow-scrolling: touch;
@@ -5559,8 +5575,7 @@ label.panel-block {
 .hero-body {
   flex-grow: 1;
   flex-shrink: 0;
-  margin-right: 2rem;
-  padding: 2.5rem 2rem 3rem 3rem;}
+  padding: 2.5rem 2rem 1.5rem 3rem;}
 
 .section {
   padding: 3rem 1.5rem; }
