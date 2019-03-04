@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="pl">
 <head>
-<title>pytania</title>
+<title>POTENCJAŁOMETR</title>
 <meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1">
 <script src="liczenie.js"></script>
 <link rel="stylesheet" href="styles/mystyles.css">
@@ -44,25 +44,25 @@
 												</tr>
 											</thead>
 										<tr>
-											<th>1</th>
+											<th>1</th> <!-- R++ -->
 											<td><div class="is-vcentered">Wolę dostosować się do zdania grupy, mimo posiadania własnego, sprzecznego zdania.</div></td>
 											<td><div class="field has-addons has-addons-centered">
-													<p class="control" id="q1y">
-														<a class="button is-success" onclick="q1y()">
+													<p class="control" id="a1_1">
+														<a class="button is-success" id="a1_1_i" onclick='answer("y","a1_1")'>
 																<span class="icon is-small is-left">
 																		<i class="fas fa-check"></i>
 																	</span>
 														</a>
 													</p>
-													<p class="control" id="q1u">
-														<a class="button is-info" onclick="q1u()">
+													<p class="control" id="a1_2">
+														<a class="button is-info" id="a1_2_i" onclick='answer("u","a1_2")'>
 																<span class="icon is-small is-left">
 																		<i class="fas fa-question"></i>
 																	</span>
 														</a>
 													</p>
-													<p class="control" id="q1n">
-														<a class="button is-danger" onclick="q1n()">
+													<p class="control" id="a1_3">
+														<a class="button is-danger" id="a1_3_i" onclick='answer("n","a1_3")'>
 																<span class="icon is-small is-left">
 																		<i class="fas fa-times"></i>
 																	</span>
@@ -72,25 +72,25 @@
 										</tr>
 						
 										<tr>
-											<th>2</th>
+											<th>2</th> <!-- R++ -->
 											<td>Rzeczy, które posiadam są dla mnie ważniejsze, niż ludzie, którzy mnie otaczają.</td>
 											<td><div class="field has-addons has-addons-centered">
-													<p class="control" id="q2y">
-														<a class="button is-success" onclick="q2y()">
+													<p class="control" id="a2_1">
+														<a class="button is-success" id="a2_1_i" onclick='answer("y","a2_1")'>
 																<span class="icon is-small is-left">
 																		<i class="fas fa-check"></i>
 																	</span>
 														</a>
 													</p>
-													<p class="control" id="q2u">
-														<a class="button is-info" onclick="q2u()">
+													<p class="control" id="a2_2">
+														<a class="button is-info" id="a2_2_i" onclick='answer("u","a2_2")'>
 																<span class="icon is-small is-left">
 																		<i class="fas fa-question"></i>
 																	</span>
 														</a>
 													</p>
-													<p class="control" id="q2n">
-														<a class="button is-danger" onclick="q2n()">
+													<p class="control" id="a2_3">
+														<a class="button is-danger" id="a2_3_i" onclick='answer("n","a2_3")'>
 																<span class="icon is-small is-left">
 																		<i class="fas fa-times"></i>
 																	</span>
@@ -100,25 +100,25 @@
 										</tr>
 						
 										<tr>
-											<th>3</th>
+											<th>3</th> <!-- R++ -->
 											<td>Podczas pracy w grupie przewiduję potrzeby, jakie mogą wystąpić i zawczasu przygotowuję się aby je zaspokoić.</td>
 											<td><div class="field has-addons has-addons-centered">
-													<p class="control" id="q3y">
-														<a class="button is-success" onclick="q3y()">
+													<p class="control" id="a3_1">
+														<a class="button is-success" id="a3_1_i" onclick='answer("y","a3_1")'>
 																<span class="icon is-small is-left">
 																		<i class="fas fa-check"></i>
 																	</span>
 														</a>
 													</p>
-													<p class="control" id="q3u">
-														<a class="button is-info" onclick="q3u()">
+													<p class="control" id="a3_2">
+														<a class="button is-info" id="a3_2_i" onclick='answer("u","a3_2")'>
 																<span class="icon is-small is-left">
 																		<i class="fas fa-question"></i>
 																	</span>
 														</a>
 													</p>
-													<p class="control" id="q3n">
-														<a class="button is-danger" onclick="q3n()">
+													<p class="control" id="a3_3">
+														<a class="button is-danger" id="a3_3_i" onclick='answer("n","a3_3")'>
 																<span class="icon is-small is-left">
 																		<i class="fas fa-times"></i>
 																	</span>
@@ -128,25 +128,25 @@
 										</tr>
 						
 										<tr>
-											<th>4</th>
+											<th>4</th> <!-- B++ -->
 											<td>Posiadam dużą wiedzę i umiem ją wykorzystywać.</td>
 											<td><div class="field has-addons has-addons-centered">
-													<p class="control" id="q4y">
-														<a class="button is-success" onclick="q4y()">
+													<p class="control" id="a4_1">
+														<a class="button is-success" id="a4_1_i" onclick='answer("y","a4_1")'>
 																<span class="icon is-small is-left">
 																		<i class="fas fa-check"></i>
 																	</span>
 														</a>
 													</p>
-													<p class="control" id="q4u">
-														<a class="button is-info" onclick="q4u()">
+													<p class="control" id="a4_2">
+														<a class="button is-info" id="a4_2_i" onclick='answer("u","a4_2")'>
 																<span class="icon is-small is-left">
 																		<i class="fas fa-question"></i>
 																	</span>
 														</a>
 													</p>
-													<p class="control" id="q4n">
-														<a class="button is-danger" onclick="q4n()">
+													<p class="control" id="a4_3">
+														<a class="button is-danger" id="a4_3_i" onclick='answer("n","a4_3")'>
 																<span class="icon is-small is-left">
 																		<i class="fas fa-times"></i>
 																	</span>
@@ -156,25 +156,25 @@
 										</tr>
 						
 										<tr>
-											<th>5</th>
+											<th>5</th> <!-- A++ -->
 											<td>Kiedy mam do przygotowania jakąś pracę, zwracam uwagę na jej wygląd zewnętrzny.</td>
 											<td><div class="field has-addons has-addons-centered">
-													<p class="control" id="q5y">
-														<a class="button is-success" onclick="q5y()">
+													<p class="control" id="a5_1">
+														<a class="button is-success" id="a5_1_i" onclick='answer("y","a5_1")'>
 																<span class="icon is-small is-left">
 																		<i class="fas fa-check"></i>
 																	</span>
 														</a>
 													</p>
-													<p class="control" id="q5u">
-														<a class="button is-info" onclick="q5u()">
+													<p class="control" id="a5_2">
+														<a class="button is-info" id="a5_2_i" onclick='answer("u","a5_2")'>
 																<span class="icon is-small is-left">
 																		<i class="fas fa-question"></i>
 																	</span>
 														</a>
 													</p>
-													<p class="control" id="q5n">
-														<a class="button is-danger" onclick="q5n()">
+													<p class="control" id="a5_3">
+														<a class="button is-danger" id="a5_3_i" onclick='answer("n","a5_3")'>
 																<span class="icon is-small is-left">
 																		<i class="fas fa-times"></i>
 																	</span>
@@ -184,25 +184,25 @@
 										</tr>
 						
 										<tr>
-												<th>6</th>
-												<td>Lubię wyróżniać się wśród znajomych</td>
+												<th>6</th> <!-- A++ -->
+												<td>Lubię wyróżniać się wśród znajomych.</td>
 												<td><div class="field has-addons has-addons-centered">
-														<p class="control" id="q6y">
-															<a class="button is-success" onclick="q6y()">
+														<p class="control" id="a6_1">
+															<a class="button is-success" id="a6_1_i" onclick='answer("y","a6_1")'>
 																	<span class="icon is-small is-left">
 																			<i class="fas fa-check"></i>
 																		</span>
 															</a>
 														</p>
-														<p class="control" id="q6u">
-															<a class="button is-info" onclick="q6u()">
+														<p class="control" id="a6_2">
+															<a class="button is-info" id="a6_2_i" onclick='answer("u","a6_2")'>
 																	<span class="icon is-small is-left">
 																			<i class="fas fa-question"></i>
 																		</span>
 															</a>
 														</p>
-														<p class="control" id="q6n">
-															<a class="button is-danger" onclick="q6n()">
+														<p class="control" id="a6_3">
+															<a class="button is-danger" id="a6_3_i" onclick='answer("n","a6_3")'>
 																	<span class="icon is-small is-left">
 																			<i class="fas fa-times"></i>
 																		</span>
@@ -212,25 +212,25 @@
 											</tr>
 						
 											<tr>
-													<th>7</th>
-													<td>Zawsze postępuję zgodnie z obowiązującymi zasadami.</td>
+													<th>7</th> <!-- S++ -->
+													<td>Lubię wspierać finansowo akcje charytatywne.</td>
 													<td><div class="field has-addons has-addons-centered">
-															<p class="control" id="q7y">
-																<a class="button is-success" onclick="q7y()">
+															<p class="control" id="a7_1">
+																<a class="button is-success" id="a7_1_i" onclick='answer("y","a7_1")'>
 																		<span class="icon is-small is-left">
 																				<i class="fas fa-check"></i>
 																			</span>
 																</a>
 															</p>
-															<p class="control" id="q7u">
-																<a class="button is-info" onclick="q7u()">
+															<p class="control" id="a7_2">
+																<a class="button is-info" id="a7_2_i" onclick='answer("u","a7_2")'>
 																		<span class="icon is-small is-left">
 																				<i class="fas fa-question"></i>
 																			</span>
 																</a>
 															</p>
-															<p class="control" id="q7n">
-																<a class="button is-danger" onclick="q7n()">
+															<p class="control" id="a7_3">
+																<a class="button is-danger" id="a7_3_i" onclick='answer("n","a7_3")'>
 																		<span class="icon is-small is-left">
 																				<i class="fas fa-times"></i>
 																			</span>
@@ -240,25 +240,25 @@
 												</tr>
 						
 												<tr>
-														<th>8</th>
-														<td>Rzeczy, które posiadam są dla mnie ważniejsze niż ludzie, którzy mnie otaczają.</td>
+														<th>8</th> <!-- P++ -->
+														<td>Chętnie podejmuję ryzyko.</td>
 														<td><div class="field has-addons has-addons-centered">
-																<p class="control" id="q8y">
-																	<a class="button is-success" onclick="q8y()">
+																<p class="control" id="a8_1">
+																	<a class="button is-success" id="a8_1_i" onclick='answer("y","a8_1")'>
 																			<span class="icon is-small is-left">
 																					<i class="fas fa-check"></i>
 																				</span>
 																	</a>
 																</p>
-																<p class="control" id="q8u">
-																	<a class="button is-info" onclick="q8u()">
+																<p class="control" id="a8_2">
+																	<a class="button is-info" id="a8_2_i" onclick='answer("u","a8_2")'>
 																			<span class="icon is-small is-left">
 																					<i class="fas fa-question"></i>
 																				</span>
 																	</a>
 																</p>
-																<p class="control" id="q8n">
-																	<a class="button is-danger" onclick="q8n()">
+																<p class="control" id="a8_3">
+																	<a class="button is-danger" id="a8_3_i" onclick='answer("n","a8_3")'>
 																			<span class="icon is-small is-left">
 																					<i class="fas fa-times"></i>
 																				</span>
@@ -268,25 +268,25 @@
 													</tr>
 						
 													<tr>
-															<th>9</th>
-															<td>Nie czuję żebym działał pod przymusem.</td>
+															<th>9</th> <!-- P++ -->
+															<td>Wierzę, że jestem w stanie wykonać każde zadanie, jakiego się podejmę.</td>
 															<td><div class="field has-addons has-addons-centered">
-																	<p class="control" id="q9y">
-																		<a class="button is-success" onclick="q9y()">
+																	<p class="control" id="a9_1">
+																		<a class="button is-success" id="a9_1_i" onclick='answer("y","a9_1")'>
 																				<span class="icon is-small is-left">
 																						<i class="fas fa-check"></i>
 																					</span>
 																		</a>
 																	</p>
-																	<p class="control" id="q9u">
-																		<a class="button is-info" onclick="q9u()">
+																	<p class="control" id="a9_2">
+																		<a class="button is-info" id="a9_2_i" onclick='answer("u","a9_2")'>
 																				<span class="icon is-small is-left">
 																						<i class="fas fa-question"></i>
 																					</span>
 																		</a>
 																	</p>
-																	<p class="control" id="q9n">
-																		<a class="button is-danger" onclick="q9n()">
+																	<p class="control" id="a9_3">
+																		<a class="button is-danger" id="a9_3_i" onclick='answer("n","a9_3")'>
 																				<span class="icon is-small is-left">
 																						<i class="fas fa-times"></i>
 																					</span>
@@ -296,25 +296,25 @@
 														</tr>
 						
 														<tr>
-																<th>10</th>
-																<td>Mimo pojawiających się problemów, nadal dążę do realizacji wyznaczonego celu</td>
+																<th>10</th> <!-- K++ -->
+																<td>Często zabraniam innym czegoś robić.</td>
 																<td><div class="field has-addons has-addons-centered">
-																		<p class="control" id="q10y">
-																			<a class="button is-success" onclick="q10y()">
+																		<p class="control" id="a0_1">
+																			<a class="button is-success" id="a0_1_i" onclick='answer("y","a0_1")'>
 																					<span class="icon is-small is-left">
 																							<i class="fas fa-check"></i>
 																						</span>
 																			</a>
 																		</p>
-																		<p class="control" id="q10u">
-																			<a class="button is-info" onclick="q10u()">
+																		<p class="control" id="a0_2">
+																			<a class="button is-info" id="a0_2_i" onclick='answer("u","a0_2")'>
 																					<span class="icon is-small is-left">
 																							<i class="fas fa-question"></i>
 																						</span>
 																			</a>
 																		</p>
-																		<p class="control" id="q10n">
-																			<a class="button is-danger" onclick="q10n()">
+																		<p class="control" id="a0_3">
+																			<a class="button is-danger" id="a0_3_i" onclick='answer("n","a0_3")'>
 																					<span class="icon is-small is-left">
 																							<i class="fas fa-times"></i>
 																						</span>

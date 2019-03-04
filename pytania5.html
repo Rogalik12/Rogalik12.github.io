@@ -1,46 +1,347 @@
-<!DOCTYPE html>
 <html lang="pl">
 <head>
-<title>pytania</title>
-<meta charset="UTF-8">
-<!-- <script src="liczenie.js"></script> -->
+<title>POTENCJAŁOMETR</title>
+<meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1">
+<script src="liczenie.js"></script>
+<link rel="stylesheet" href="styles/mystyles.css">
+<script defer src="https://use.fontawesome.com/releases/v5.0.7/js/all.js"></script>
+<script src="plec.js"></script>
+<!-- <link rel="stylesheet" href="styles/debug.css"> -->
 </head>
 <body>
-<h1>pytanka</h1>
 
-<ol start="41">
-  <li><form>
-  	<input type="checkbox" name="answer" value="S">
-  	Umiem pracować z innymi ludźmi nad jednym projektem.<br></li>
-  <li>
-  	<input type="checkbox" name="answer" value="S">
-  	Staram się być miły dla innych.<br></li>
-  <li>
-  	<input type="checkbox" name="answer" value="S">
-  	Lubię wspierać finansowo akcje charytatywne.<br></li>
-  <li>
-  	<input type="checkbox" name="answer" value="S">
-  	Lubię pomagać innym, np. w lekcjach.<br></li>
-  <li>
-  	<input type="checkbox" name="answer" value="S">
-  	Zawsze bardzo dokładnie badam zagadnienie, którym się zajmuję.<br></li>
-  <li>
-  	<input type="checkbox" name="answer" value="S">
-  	Odnoszę się do innych ludzi życzliwie, z szacunkiem.<br></li>
-  <li>
-  	<input type="checkbox" name="answer" value="S">
-  	Jestem gotów ponieść konsekwencje złego czynu, który popełniłem.<br></li>
-  <li>
-  	<input type="checkbox" name="answer" value="SP">
-  	Aktywnie działam w różnych akcjach społecznych (wolontariaty, akcje charytatywne).<br></li>
-  <li>
-    <input type="checkbox" name="answer" value="P">
-    Lubię rozmawiać z innymi ludźmi.<br></li>
-  <li>
-    <input type="checkbox" name="answer" value="P">
-    Chętnie podejmuję ryzyko.<br></li>
-</ol>
 
-<input type="submit" value="dalej"></form>
+<section class="hero is-light is-fullheight-with-navbar">
+	<!-- <nav class="hero-head">
+                <div class="level-item has-text-centered">
+                    <div>
+                        <p class="heading"><img src="imgs/logo3.png" alt="" style="max-height: 90px;"></p>
+                    </div>
+                </div>
+            </nav> -->
+	<nav class="hero-body">
+		
+			<div class="columns is-vcentered is-7">
+                    <div class="column">
+                        <div class="containter has-text-centered">
+                            <p class="heading"><img src="imgs/logo3.png" alt="" style="max-height: 110px; max-width: 75%;"></p>
+							<p class="heading"><img src="imgs/killme.png" alt="" ></p>
+							<h1 class="title">40/70</h1>
+							<progress class="progress is-danger is-large" value="60" max="100" style="max-width: 75%;"></progress>
+							
+                            <h1 class="subtitle">W roku szkolnym 2017/18 w polskiej oświacie pracowało aż <b>509,8 tys.</b> nauczycieli.</h1>
+						</div>
+                    </div>
+                    <div class="column">
+                        <div class="containter has-text-centered">
+								<table class="table is-bordered is-striped is-narrow is-hoverable is-fullwidth is-mobile is-center">
+										<thead>
+												<tr>
+												<th>Lp</th>
+												<th>Pytanie</th>
+												<th class="has-text-centered">Odpowiedź</th>
+												</tr>
+											</thead>
+										<tr>
+											<th>1</th> <!-- B++ P++ -->
+											<td><div class="is-vcentered">Potrafię panować nad swoimi emocjami.</div></td>
+											<td><div class="field has-addons has-addons-centered">
+													<p class="control" id="a1_1">
+														<a class="button is-success" id="a1_1_i" onclick='answer("y","a1_1")'>
+																<span class="icon is-small is-left">
+																		<i class="fas fa-check"></i>
+																	</span>
+														</a>
+													</p>
+													<p class="control" id="a1_2">
+														<a class="button is-info" id="a1_2_i" onclick='answer("u","a1_2")'>
+																<span class="icon is-small is-left">
+																		<i class="fas fa-question"></i>
+																	</span>
+														</a>
+													</p>
+													<p class="control" id="a1_3">
+														<a class="button is-danger" id="a1_3_i" onclick='answer("n","a1_3")'>
+																<span class="icon is-small is-left">
+																		<i class="fas fa-times"></i>
+																	</span>
+														</a>
+													</p>
+												</div>
+										</tr>
+						
+										<tr>
+											<th>2</th> <!-- R++ -->
+											<td>Nie lubię chwalić się przed ludźmi swoimi osiągnięciami.</td>
+											<td><div class="field has-addons has-addons-centered">
+													<p class="control" id="a2_1">
+														<a class="button is-success" id="a2_1_i" onclick='answer("y","a2_1")'>
+																<span class="icon is-small is-left">
+																		<i class="fas fa-check"></i>
+																	</span>
+														</a>
+													</p>
+													<p class="control" id="a2_2">
+														<a class="button is-info" id="a2_2_i" onclick='answer("u","a2_2")'>
+																<span class="icon is-small is-left">
+																		<i class="fas fa-question"></i>
+																	</span>
+														</a>
+													</p>
+													<p class="control" id="a2_3">
+														<a class="button is-danger" id="a2_3_i" onclick='answer("n","a2_3")'>
+																<span class="icon is-small is-left">
+																		<i class="fas fa-times"></i>
+																	</span>
+														</a>
+													</p>
+												</div>
+										</tr>
+						
+										<tr>
+											<th>3</th> <!-- B++ -->
+											<td>Potrafię negatywnie ocenić swoje postępowanie.</td>
+											<td><div class="field has-addons has-addons-centered">
+													<p class="control" id="a3_1">
+														<a class="button is-success" id="a3_1_i" onclick='answer("y","a3_1")'>
+																<span class="icon is-small is-left">
+																		<i class="fas fa-check"></i>
+																	</span>
+														</a>
+													</p>
+													<p class="control" id="a3_2">
+														<a class="button is-info" id="a3_2_i" onclick='answer("u","a3_2")'>
+																<span class="icon is-small is-left">
+																		<i class="fas fa-question"></i>
+																	</span>
+														</a>
+													</p>
+													<p class="control" id="a3_3">
+														<a class="button is-danger" id="a3_3_i" onclick='answer("n","a3_3")'>
+																<span class="icon is-small is-left">
+																		<i class="fas fa-times"></i>
+																	</span>
+														</a>
+													</p>
+												</div>
+										</tr>
+						
+										<tr>
+											<th>4</th> <!-- B++ -->
+											<td>Wykonuję wszystko bardzo dokładnie i dbam o szczegóły.</td>
+											<td><div class="field has-addons has-addons-centered">
+													<p class="control" id="a4_1">
+														<a class="button is-success" id="a4_1_i" onclick='answer("y","a4_1")'>
+																<span class="icon is-small is-left">
+																		<i class="fas fa-check"></i>
+																	</span>
+														</a>
+													</p>
+													<p class="control" id="a4_2">
+														<a class="button is-info" id="a4_2_i" onclick='answer("u","a4_2")'>
+																<span class="icon is-small is-left">
+																		<i class="fas fa-question"></i>
+																	</span>
+														</a>
+													</p>
+													<p class="control" id="a4_3">
+														<a class="button is-danger" id="a4_3_i" onclick='answer("n","a4_3")'>
+																<span class="icon is-small is-left">
+																		<i class="fas fa-times"></i>
+																	</span>
+														</a>
+													</p>
+												</div>
+										</tr>
+						
+										<tr>
+											<th>5</th> <!-- A++ -->
+											<td>Moja głowa jest pełna nowych pomysłów.</td>
+											<td><div class="field has-addons has-addons-centered">
+													<p class="control" id="a5_1">
+														<a class="button is-success" id="a5_1_i" onclick='answer("y","a5_1")'>
+																<span class="icon is-small is-left">
+																		<i class="fas fa-check"></i>
+																	</span>
+														</a>
+													</p>
+													<p class="control" id="a5_2">
+														<a class="button is-info" id="a5_2_i" onclick='answer("u","a5_2")'>
+																<span class="icon is-small is-left">
+																		<i class="fas fa-question"></i>
+																	</span>
+														</a>
+													</p>
+													<p class="control" id="a5_3">
+														<a class="button is-danger" id="a5_3_i" onclick='answer("n","a5_3")'>
+																<span class="icon is-small is-left">
+																		<i class="fas fa-times"></i>
+																	</span>
+														</a>
+													</p>
+												</div>
+										</tr>
+						
+										<tr>
+												<th>6</th> <!-- S++ -->
+												<td>Potrafię przekonać innych do swojego zdania.</td>
+												<td><div class="field has-addons has-addons-centered">
+														<p class="control" id="a6_1">
+															<a class="button is-success" id="a6_1_i" onclick='answer("y","a6_1")'>
+																	<span class="icon is-small is-left">
+																			<i class="fas fa-check"></i>
+																		</span>
+															</a>
+														</p>
+														<p class="control" id="a6_2">
+															<a class="button is-info" id="a6_2_i" onclick='answer("u","a6_2")'>
+																	<span class="icon is-small is-left">
+																			<i class="fas fa-question"></i>
+																		</span>
+															</a>
+														</p>
+														<p class="control" id="a6_3">
+															<a class="button is-danger" id="a6_3_i" onclick='answer("n","a6_3")'>
+																	<span class="icon is-small is-left">
+																			<i class="fas fa-times"></i>
+																		</span>
+															</a>
+														</p>
+													</div>
+											</tr>
+						
+											<tr>
+													<th>7</th> <!-- S++ -->
+													<td>Jestem gotów ponieść konsekwencje złego czynu, jeśli taki popełnię.</td>
+													<td><div class="field has-addons has-addons-centered">
+															<p class="control" id="a7_1">
+																<a class="button is-success" id="a7_1_i" onclick='answer("y","a7_1")'>
+																		<span class="icon is-small is-left">
+																				<i class="fas fa-check"></i>
+																			</span>
+																</a>
+															</p>
+															<p class="control" id="a7_2">
+																<a class="button is-info" id="a7_2_i" onclick='answer("u","a7_2")'>
+																		<span class="icon is-small is-left">
+																				<i class="fas fa-question"></i>
+																			</span>
+																</a>
+															</p>
+															<p class="control" id="a7_3">
+																<a class="button is-danger" id="a7_3_i" onclick='answer("n","a7_3")'>
+																		<span class="icon is-small is-left">
+																				<i class="fas fa-times"></i>
+																			</span>
+																</a>
+															</p>
+														</div>
+												</tr>
+						
+												<tr>
+														<th>8</th> <!-- P++ -->
+														<td>Rozpiera mnie energia i mam pewność tego, co chcę robić.</td>
+														<td><div class="field has-addons has-addons-centered">
+																<p class="control" id="a8_1">
+																	<a class="button is-success" id="a8_1_i" onclick='answer("y","a8_1")'>
+																			<span class="icon is-small is-left">
+																					<i class="fas fa-check"></i>
+																				</span>
+																	</a>
+																</p>
+																<p class="control" id="a8_2">
+																	<a class="button is-info" id="a8_2_i" onclick='answer("u","a8_2")'>
+																			<span class="icon is-small is-left">
+																					<i class="fas fa-question"></i>
+																				</span>
+																	</a>
+																</p>
+																<p class="control" id="a8_3">
+																	<a class="button is-danger" id="a8_3_i" onclick='answer("n","a8_3")'>
+																			<span class="icon is-small is-left">
+																				<i class="fas fa-times"></i>
+																			</span>
+																	</a>
+																</p>
+															</div>
+													</tr>
+						
+													<tr>
+															<th>9</th> <!-- K++ -->
+															<td>Wykonuję swoje obowiązki rzetelnie i dokładnie.</td>
+															<td><div class="field has-addons has-addons-centered">
+																	<p class="control" id="a9_1">
+																		<a class="button is-success" id="a9_1_i" onclick='answer("y","a9_1")'>
+																				<span class="icon is-small is-left">
+																						<i class="fas fa-check"></i>
+																					</span>
+																		</a>
+																	</p>
+																	<p class="control" id="a9_2">
+																		<a class="button is-info" id="a9_2_i" onclick='answer("u","a9_2")'>
+																				<span class="icon is-small is-left">
+																						<i class="fas fa-question"></i>
+																					</span>
+																		</a>
+																	</p>
+																	<p class="control" id="a9_3">
+																		<a class="button is-danger" id="a9_3_i" onclick='answer("n","a9_3")'>
+																				<span class="icon is-small is-left">
+																						<i class="fas fa-times"></i>
+																					</span>
+																		</a>
+																	</p>
+																</div>
+														</tr>
+						
+														<tr>
+																<th>10</th> <!-- K++ -->
+																<td>Wolę uczyć się przez doświadczenia, a nie przez podręczniki.</td>
+																<td><div class="field has-addons has-addons-centered">
+																		<p class="control" id="a0_1">
+																			<a class="button is-success" id="a0_1_i" onclick='answer("y","a0_1")'>
+																					<span class="icon is-small is-left">
+																							<i class="fas fa-check"></i>
+																						</span>
+																			</a>
+																		</p>
+																		<p class="control" id="a0_2">
+																			<a class="button is-info" id="a0_2_i" onclick='answer("u","a0_2")'>
+																					<span class="icon is-small is-left">
+																							<i class="fas fa-question"></i>
+																						</span>
+																			</a>
+																		</p>
+																		<p class="control" id="a0_3">
+																			<a class="button is-danger" id="a0_3_i" onclick='answer("n","a0_3")'>
+																					<span class="icon is-small is-left">
+																							<i class="fas fa-times"></i>
+																						</span>
+																			</a>
+																		</p>
+																	</div>
+															</tr>
+								</table>
+                        </div>
+					</div>
+				</div>
+				
+</nav>
+<div class="has-text-centered">
+<a class="button is-danger is-medium is-half-width is-outlined" href="pytania6.html">Dalej!</a><br><br>
+</div>
+</section>
+
+<nav class="hero-foot">
+		<div class="container">
+			<div class="content has-text-centered">
+				<p>
+					Test został zaprojektowany przez uczniów <a href="http://www.tm1.edu.pl">Technikum Mechatronicznego nr 1 w
+						Warszawie</a>.
+				</p>
+			</div>
+		</div>
+	</nav>
+
 </body>
 </html>

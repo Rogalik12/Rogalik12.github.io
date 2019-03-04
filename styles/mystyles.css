@@ -265,7 +265,10 @@ html {
   overflow-x: hidden;
   overflow-y: scroll;
   text-rendering: optimizeLegibility;
-  text-size-adjust: 100%; }
+  text-size-adjust: 100%; 
+  user-select: none;
+  -moz-user-select: none;  
+}
 
 article,
 aside,
