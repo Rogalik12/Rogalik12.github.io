@@ -6740,3 +6740,21 @@ label.panel-block {
     .tile.is-12 {
       flex: none;
       width: 100%; } }
+
+      @media screen and (max-width: 932px) {
+        .title.is-1 {
+          font-size: 2.5rem; } }
+
+
+      @media screen and (max-width: 814px) {
+        .title.is-1 {
+          font-size: 2rem; } }
+
+
+              @media screen and (max-width: 768px) {
+                .title.is-1 {
+                  font-size: 3rem; } }
+
+                  #c-left{
+                    margin-right: 2rem;
+                  }
