@@ -1,0 +1,67 @@
+#header{
+    font-family: Arial;
+    text-align: center;
+    font-size: 30px;
+    width: calc(100%);
+    background-color: #f8bbd0;
+    height: 40px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    position: fixed;
+    z-index:1;
+}
+
+body{
+    padding: 0px;
+    margin: 0px;
+    background-color: #fce4ec;
+}
+
+a, a:visited{
+    text-decoration: none;
+    color: black;
+}
+
+#container{
+    position: relative;
+    top: 80px;
+    margin-left: 20px;
+    margin-right: 20px;
+    font-size: 20px;
+}
+
+#pjes1{
+    position: absolute;
+    top: 420px;
+    clip: rect(0px, 200px, 600px, 0px);
+}
+
+#pjes2{
+    position: absolute;
+    top: 840px;
+    clip: rect(0px, 310px, 600px, 0px);
+}
+
+#pjes3{
+    position: absolute;
+    top: 1260px;
+    clip: rect(0px, 500px, 600px, 0px);
+}
+
+#podpisik1{
+    position: absolute;
+    left: 250px;
+    top: 620px;
+}
+
+#podpisik2{
+    position: absolute;
+    left: 350px;
+    top: 1030px;
+}
+
+#podpisik3{
+    position: absolute;
+    left: 550px;
+    top: 1460px;
+}
