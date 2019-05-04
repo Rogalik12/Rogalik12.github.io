@@ -18,12 +18,13 @@ body{
     position: absolute;
     top: 50%;
     left: 50%;
-    max-width: 900px;
+    width: 90%;
     display: block;
     margin: 0 auto;
     text-align: center;
     transform: translate(-50%, -50%);
     line-height: 40px;
+    padding: 0px;
 }
 
 .title{
@@ -32,7 +33,7 @@ body{
     vertical-align: middle;
     font-family: 'Permanent Marker', cursive;
     text-transform: uppercase;
-    font-size: 50px;
+    font-size: 60px;
     text-shadow: 0 0 10px rgba(0, 0, 0, .7);
 }
 
@@ -42,6 +43,53 @@ body{
     vertical-align: middle;
     font-family: Arial, Helvetica, sans-serif;
     text-transform: uppercase;
-    font-size: 20px;
+    font-size: 23px;
     text-shadow: 0 0 10px rgba(0, 0, 0, 1);
+}
+
+@media screen and (max-width: 842px){
+    .title {line-height: 55px;}
+    .subtitle{line-height: 36px; font-size: 20px;}
+}
+
+@media screen and (max-width: 558px){
+    .title {line-height: 0px; font-size: 40px}
+    .subtitle{line-height: 46px; font-size: 17px;}
+    .hero_iscentered{line-height: 35px;}
+}
+
+@media screen and (max-width: 371px){
+    .hero_iscentered{line-height: 30px;}
+    .title {line-height: 0px; font-size: 35px}
+    .subtitle{line-height: 0px; font-size: 15px;}
+}
+
+@media screen and (max-width: 324px){
+    .hero_iscentered{line-height: 27px;}
+    .title {line-height: 0px; font-size: 30px}
+    .subtitle{line-height: 0px; font-size: 14px;}
+}
+
+@media screen and (max-width: 287px){
+    .hero_iscentered{line-height: 23px;}
+    .title {line-height: 0px; font-size: 25px}
+    .subtitle{line-height: 0px; font-size: 12px;}
+}
+
+@media screen and (max-width: 238px){
+    .hero_iscentered{line-height: 21px;}
+    .title {line-height: 0px; font-size: 23px}
+    .subtitle{line-height: 0px; font-size: 10px;}
+}
+
+@media screen and (max-width: 208px){
+    .hero_iscentered{line-height: 19px;}
+    .title {line-height: 0px; font-size: 18px}
+    .subtitle{line-height: 0px; font-size: 8px;}
+}
+
+@media screen and (max-width: 168px){
+    .hero_iscentered{line-height: 17px;}
+    .title {line-height: 0px; font-size: 17px}
+    .subtitle{line-height: 0px; font-size: 7px;}
 }
