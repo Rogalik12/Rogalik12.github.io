@@ -1,0 +1,123 @@
+.bgImageContainer{
+    width: 100%;
+    height: 100vh;
+    background-image: url("bg.jpg");
+    background-size: cover;
+    background-attachment: inherit;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+body{
+    margin: 0px;
+    padding: 0px;
+    
+}
+
+.hero_iscentered{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 90%;
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+    transform: translate(-50%, -50%);
+    line-height: 40px;
+    padding: 0px;
+}
+
+.title{
+    text-align: center;
+    color: #f7f7f7;
+    vertical-align: middle;
+    font-family: 'Permanent Marker', cursive;
+    text-transform: uppercase;
+    font-size: 60px;
+    text-shadow: 0 0 10px rgba(0, 0, 0, .7);
+}
+
+.subtitle{
+    text-align: center;
+    color: #f7f7f7;
+    vertical-align: middle;
+    font-family: Arial, Helvetica, sans-serif;
+    text-transform: uppercase;
+    font-size: 23px;
+    text-shadow: 0 0 10px rgba(0, 0, 0, 1);
+}
+
+.hero-light{
+    width: 100%;
+    height: 100vh;
+    background-color: #f7f7f7;
+}
+
+.hero-white {
+    width: 100%;
+    height: 100vh;
+    background-color: #ffffff;
+}
+
+.hero-img-1{
+    background-image: url('dog.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+    filter: brightness(10px);
+    height: 100vh;
+    width: 100%;
+    /* filter: brightness(50%); */
+}
+
+@media screen and (min-width: 843){
+    .title {font-size: 60px;}
+    .subtitle{line-height: 46px; font-size: 23px;}
+    .hero_iscentered{line-height: 40px;}
+}
+
+@media screen and (max-width: 842px){
+    .title {line-height: 55px;}
+    .subtitle{line-height: 36px; font-size: 20px;}
+}
+
+@media screen and (max-width: 558px){
+    .title {line-height: 0px; font-size: 40px}
+    .subtitle{line-height: 46px; font-size: 17px;}
+    .hero_iscentered{line-height: 35px;}
+}
+
+@media screen and (max-width: 371px){
+    .hero_iscentered{line-height: 30px;}
+    .title {line-height: 0px; font-size: 35px}
+    .subtitle{line-height: 0px; font-size: 15px;}
+}
+
+@media screen and (max-width: 324px){
+    .hero_iscentered{line-height: 27px;}
+    .title {line-height: 0px; font-size: 30px}
+    .subtitle{line-height: 0px; font-size: 14px;}
+}
+
+@media screen and (max-width: 287px){
+    .hero_iscentered{line-height: 23px;}
+    .title {line-height: 0px; font-size: 25px}
+    .subtitle{line-height: 0px; font-size: 12px;}
+}
+
+@media screen and (max-width: 238px){
+    .hero_iscentered{line-height: 21px;}
+    .title {line-height: 0px; font-size: 23px}
+    .subtitle{line-height: 0px; font-size: 10px;}
+}
+
+@media screen and (max-width: 208px){
+    .hero_iscentered{line-height: 19px;}
+    .title {line-height: 0px; font-size: 18px}
+    .subtitle{line-height: 0px; font-size: 8px;}
+}
+
+@media screen and (max-width: 168px){
+    .hero_iscentered{line-height: 17px;}
+    .title {line-height: 0px; font-size: 17px}
+    .subtitle{line-height: 0px; font-size: 7px;}
+}
