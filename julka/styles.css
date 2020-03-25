@@ -1,0 +1,122 @@
+body{
+    padding: 0;
+    margin: 0;
+    font-family: "Comic Sans MS", cursive, sans-serif;
+}
+h1, h2, h3, h4, h5{
+    margin: 0;
+    padding: 0;
+    font-family: "Comic Sans MS", cursive, sans-serif;
+}
+
+a{
+    color: black;
+}
+
+#container{
+    width: 100%;
+
+}
+
+#banner{
+    text-align: center;
+    background-color: #FF9AA2;
+    height: 8vh;
+}
+
+#cytat {
+    text-align: center;
+    background-color: #FFB7B2;
+    font-style: italic;
+    height: 5.25vh;
+}
+
+#menu{
+    width: 100%;
+    height: 2.75vh;
+}
+
+.menu-element{
+    background-color: #FFDAC1;
+    height: 100%;
+    width: 25%;
+    float: left;
+    text-align: center;
+    font-weight: 500;
+}
+
+.menu-element:hover{
+    background-color: #FFB7B2;
+}
+
+#galeria-1{
+    background-color: #E2F0CB;
+    width: 100%;
+    height: 30vh;
+}
+
+#galeria-2 {
+    background-color: #B5EAD7;
+    width: 100%;
+    height: 30vh;
+}
+
+#wpis {
+    background-color: #C7CEEA;
+    width: 100%;
+    height: 24vh;
+}
+
+.kafelek{
+    width: 50%;
+    float: left;
+    height: 30vh;
+    text-align: center;
+}
+
+.c-b{
+    clear: both;
+}
+
+
+p{
+    margin: 0;
+    font-size: 3vh;
+}
+
+img{
+    margin: 1.5vh;
+    height: 20vh;
+}
+
+#tytul {
+    background-color: #E2F0CB;
+    width: 100%;
+    height: 5vh;
+    text-align: center;
+    font-size: 2.2vh;
+}
+
+#autor {
+    background-color: #B5EAD7;
+    width: 100%;
+    height: 3vh;
+    text-align: center;
+}
+
+#tresc {
+    background-color: #C7CEEA;
+    width: 96vw;
+    padding-right: 2vw;
+    padding-left: 2vw;
+    height: 72vh;
+    padding-top: 2vh;
+    padding-bottom: 2vh;
+    font-size: 19px;
+}
+
+#obrazek_art {
+    float: left;
+    margin-top: 0;
+    margin-left: 0;
+}
